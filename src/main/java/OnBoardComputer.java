@@ -4,15 +4,13 @@ public class OnBoardComputer implements BurnStream {
     public int getNextBurn(DescentEvent status) {
 
 
-
-
 ////        int burn = 0;
         int altitude = status.getAltitude();
         int velocity = status.getVelocity();
-        int burn = (velocity * velocity/ (2 * altitude)) + 100;
+        int burn = (velocity * velocity / (2 * altitude)) + 100;
 
 
-// got it to land once, so i'm memorializing the occasion with the results below
+        // got it to land a few times now, so i'm memorializing this with the results below
         // i know this is not a way to do this and i got lucky.
 
 //        Time	Velocity		Fuel		Altitude		Burn
@@ -68,9 +66,6 @@ public class OnBoardComputer implements BurnStream {
         return burn;
 
 
-
-
-
 //        int altitude = status.getAltitude();
 //        int velocity = status.getVelocity();
 //        int burn = (velocity * velocity/ (2 * altitude)) + 100;
@@ -95,6 +90,13 @@ public class OnBoardComputer implements BurnStream {
 //
 //        System.out.println(burn); /*hack!*/
 //        return burn;
+
+
+/////////////////////////////////
+
+//        int altitude = status.getAltitude();
+//        int velocity = status.getVelocity();
+
 
     }
 }
